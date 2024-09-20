@@ -31,5 +31,15 @@ around plants. From my research, most plant datasets involve the scientific name
 but not really proper care information. 
 
 ## How to Run
+1. Git clone this repo onto your local device.
+```
+git clone https://github.com/Sreya-Mandalika/plant-care-guide.git
+cd random-boardgame
+```
+2. Go to the Trefle API website, and sign up to generate a free API key.
+3. Install the required dependencies using the requirements.txt file.
+   ```
+   Pip install -r requirements.txt
+   ```
+4. Run the main.py file - it will generate the plant_data_and_care_tips.csv (the dataset). 
 
-How can someone run this (e.g., git clone, pip install -r requirements.txt)
