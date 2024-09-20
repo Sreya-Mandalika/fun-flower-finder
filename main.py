@@ -8,11 +8,11 @@ import time
 
 #load enviorment, fetch API and URLs, and define headers
 load_dotenv()
-api_key = os.getenv('API_KEY')
+api_key = os.getenv('TREFLE_KEY')
 base_url = "https://trefle.io/api/v1/plants"
 
 headers = {
-    'Authorization': f'Bearer {"SujzVHwyLZt-y76KE5cUAuRHI9NjH-0Uo8gFGZXYTN8"}' 
+    'Authorization': f'Bearer {api_key}' 
 }
 
 #scrape plant names (common and scientific) and care facts from the website
