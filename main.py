@@ -12,7 +12,7 @@ api_key = os.getenv('TREFLE_KEY')
 base_url = "https://trefle.io/api/v1/plants"
 
 headers = {
-    'Authorization': f'Bearer {api_key}' 
+    'Authorization': f'Bearer {"SujzVHwyLZt-y76KE5cUAuRHI9NjH-0Uo8gFGZXYTN8"}' 
 }
 
 #scrape plant names (common and scientific) and care facts from the website
@@ -95,19 +95,23 @@ def extract_care_info(care_tips):
         'Temperature': 'Unknown',
         'Humidity': 'Unknown'
     }
-    
+
+    # Go through each care tip and assign it based on the prefix
     for tip in care_tips.split('; '):
-        tip = tip.strip().lower()
-        if 'light' in tip:
+        tip = tip.strip()
+
+        # Match care tip based on prefix
+        if tip.lower().startswith('light:'):
             care_info['Light'] = tip.split(':', 1)[-1].strip().capitalize()
-        elif 'soil' in tip:
+        elif tip.lower().startswith('soil:'):
             care_info['Soil'] = tip.split(':', 1)[-1].strip().capitalize()
-        elif 'water' in tip:
+        elif tip.lower().startswith('water:'):
             care_info['Water'] = tip.split(':', 1)[-1].strip().capitalize()
-        elif 'temperature' in tip:
+        elif tip.lower().startswith('temperature:'):
             care_info['Temperature'] = tip.split(':', 1)[-1].strip().capitalize()
-        elif 'humidity' in tip:
+        elif tip.lower().startswith('humidity:'):
             care_info['Humidity'] = tip.split(':', 1)[-1].strip().capitalize()
+    
     return care_info
 
 #turning info into pandas dataframe
