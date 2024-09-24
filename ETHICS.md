@@ -1,7 +1,7 @@
 # Ethics of the Plant Care Guide dataset
 ## Purpose of data collection
 I am collecting this data for two main reasons:
-1. For educational purposes - I am interested in exploring more about webscraping
+1. For educational purposes - I am interested in exploring more about webscraping.
 2. I am interested in plants, but I don't really know how to take care of most house plants, so I wanted to
    create a dataset that would tell me how to take care of a lot of common ones. The code webscrapes only the plant
    name and care information for each plant. 
