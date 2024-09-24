@@ -3,11 +3,11 @@
 I am collecting this data for two main reasons:
 1. For educational purposes - I am interested in exploring more about webscraping.
 2. I am interested in plants, but I don't really know how to take care of most house plants, so I wanted to
-   create a dataset that would tell me how to take care of a lot of common ones. The code webscrapes only the plant
+   create a dataset that would tell me how to take care of many common ones. The code webscrapes only the plant
    name and care information for each plant. 
 
 ## Data sources and robots.txt
-This site **does not** have API access or documentation, which makes it interesting to scrape. General access for 
+This site **does nott** have API access or documentation, which makes it interesting to scrape. General access for 
 most of the pages, including the common house plants page, is allowed according to the robots.txt file.
 
 ## Collection practices
